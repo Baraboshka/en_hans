@@ -1,0 +1,12 @@
+CREATE DATABASE en_hans;
+
+CREATE TABLE IF NOT EXISTS en_hans.raw_video (
+    raw_video_id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    extension VARCHAR(16) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS en_hans.soundtrack (
+    soundtrack_id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    raw_video_id INT(10) UNSIGNED NOT NULL
+);
+
